@@ -11,21 +11,39 @@ body {
 }
 
 .container {
+    font-size: 3em;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
     display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 20% 10% 60% 10%;
 }
 
 header {
     background-color: #00cc66;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 15vh;
 }
 
 nav {
     background-color: #ff5050;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 10vh;
 }
 
 article {
     background-color: #3399ff;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 70vh;
 }
 
 footer {
     background-color: #00cc66;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 5vh;
 }
