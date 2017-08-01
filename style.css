@@ -4,12 +4,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Caveat', cursive;
 }
 
 body {
     font-size: 15px;
     background-color: #303030;
+    color: white;
 }
 
 .container {
@@ -31,9 +32,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Caveat', cursive;
     font-size: 5em;
-    color: white;
     text-align: center;
 }
 
@@ -60,10 +59,9 @@ nav ul li a {
     display: block;
     width: 100%;
     text-decoration: none;
-    color: white;
     height: 5vh;
     font-size: 2em;
-    font-family: 'Caveat', cursive;
+    color: white;
 
 }
 
@@ -74,11 +72,29 @@ nav ul li a:hover {
 /* ARTICLE */
 
 article {
-    background-color: #3399ff;
     grid-column-start: 2;
     grid-column-end: 3;
-    height: 70vh;
+    height: 75vh;
+    text-align: center;
 }
+
+article h2 {
+    font-size: 3em;
+    padding: 2%;
+}
+
+article p {
+    width: 50%;
+    font-size: 2em;
+    text-align: center;
+    display: inline-block;
+}
+
+article p:hover {
+    background-color: #505050;
+}
+
+
 
 footer {
     background-color: #00cc66;
