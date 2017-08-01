@@ -7,4 +7,25 @@
 
 body {
     font-size: 15px;
+    background-color: #303030;
+}
+
+.container {
+    display: grid;
+}
+
+header {
+    background-color: #00cc66;
+}
+
+nav {
+    background-color: #ff5050;
+}
+
+article {
+    background-color: #3399ff;
+}
+
+footer {
+    background-color: #00cc66;
 }
