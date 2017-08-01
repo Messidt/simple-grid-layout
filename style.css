@@ -1,3 +1,5 @@
+/* GENERAL STYLES */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +13,6 @@ body {
 }
 
 .container {
-    text-align: center;
     width: 80%;
     margin: 0 auto;
     display: grid;
@@ -19,27 +20,58 @@ body {
     grid-template-rows: 20% 10% 60% 10%;
 }
 
+/* HEADER */
+
 header {
     grid-column-start: 1;
     grid-column-end: 4;
     height: 15vh;
     padding: 1%;
+    min-height: 100px;
 }
 
 header h1 {
     font-family: 'Caveat', cursive;
     font-size: 5em;
     color: white;
+    text-align: center;
 }
 
-
+/* NAVIGATION */
 nav {
-    background-color: #ff5050;
     grid-column-start: 2;
     grid-column-end: 3;
-    height: 10vh;
+    height: 5vh;
+    min-height: 50px;
 }
 
+nav ul {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+}
+
+nav ul li {
+    width: 20%;
+}
+
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    height: 5vh;
+    font-size: 2em;
+    font-family: 'Caveat', cursive;
+
+}
+
+nav ul li a:hover {
+    border: 1px solid white;
+}
+
+/* ARTICLE */
 
 article {
     background-color: #3399ff;
