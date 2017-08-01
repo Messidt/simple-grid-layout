@@ -76,6 +76,7 @@ article {
     grid-column-end: 3;
     height: 75vh;
     text-align: center;
+    min-height: 500px;
 }
 
 article h2 {
@@ -97,8 +98,13 @@ article p:hover {
 
 
 footer {
-    background-color: #00cc66;
     grid-column-start: 1;
     grid-column-end: 4;
     height: 5vh;
+    text-align: center;
+    min-height: 50px;
+}
+
+footer p {
+    font-size: 1.5em;
 }
