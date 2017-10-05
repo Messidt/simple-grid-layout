@@ -12,4 +12,8 @@ $(function() {
         $('article ul').removeClass('grid');
     });
     
+    $('#burger-nav i').on('click', function(){
+       $('nav ul').toggleClass('open'); 
+    });
+    
   });
