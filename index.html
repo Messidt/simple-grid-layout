@@ -7,36 +7,70 @@
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <script src='scripts/jquery-3.2.1.min.js'></script>
+    <script src="scripts/responsiveslides.min.js"></script>
+    <script src='scripts/main.js'></script>
 </head>
 <body>
     <div class='container'>
         <header id='page-header'>
-           <h1>Internet Coffee</h1>
+           <h1><i class="icon-coffee"></i>Internet Coffee</h1>
+           <h2>Best on the net!</h2>
             <nav>
                <h2>Main navigation</h2>
                 <ul>
-                    <li><a href="#">Restaurant</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">/&nbsp;Restaurant&nbsp;/</a></li>
+                    <li><a href="#">/&nbsp;About&nbsp;/</a></li>
+                    <li><a href="#">/&nbsp;Gallery&nbsp;/</a></li>
+                    <li><a href="#">/&nbsp;Jobs&nbsp;/</a></li>
+                    <li><a href="#">/&nbsp;Contact&nbsp;/</a></li>
                 </ul>
             </nav>
         </header>
         <div id='main-banner'>
-            <img src="images/img1.jpg" alt="banner image">
+            <ul class="rslides">
+              <li>
+                <img src="images/img1.jpg" alt="banner-img">
+                <p>Best&nbsp;quality...</p>
+              </li>
+              <li>
+                  <img src="images/img2.jpg" alt="banner-img">
+                  <p>Perfectly&nbsp;served...</p>
+              </li>
+              <li>
+                  <img src="images/img3.jpg" alt="banner-img">
+                  <p>Just&nbsp;enjoy :)</p>
+              </li>
+            </ul>
         </div>
-        <article>
-            <header id='menu'>Menu</header>
+        <article id='menu'>
+            <header>
+                <h1>Menu</h1>
+                <div id='menu-view'>
+                    <span>View:</span>
+                    <a href="" id='list-view'>List</a>
+                    <span>|</span>
+                    <a href="" id='column-view'>Columns</a>
+                </div>
+            </header>
             <ul>
-                <li>Espresso</li>
-                <li>Capuccino</li>
-                <li>Mocca</li>
-                <li>Americano</li>
+                <li><i class="icon-coffee"></i>Espresso<i class="icon-coffee"></i></li>
+                <li><i class="icon-coffee"></i>Capuccino<i class="icon-coffee"></i></li>
+                <li><i class="icon-coffee"></i>Mocca<i class="icon-coffee"></i></li>
+                <li><i class="icon-coffee"></i>Americano<i class="icon-coffee"></i></li>
+                <li><i class="icon-coffee"></i>Kopi&nbsp;Luwak<i class="icon-coffee"></i></li>
+                <li><i class="icon-coffee"></i>Turkish&nbsp;coffee<i class="icon-coffee"></i></li>
+                <li><i class="icon-coffee"></i>Frappuccino<i class="icon-coffee"></i></li>
+                <li><i class="icon-coffee"></i>Café&nbsp;Crema<i class="icon-coffee"></i></li>
+                <li><i class="icon-coffee"></i>Breve<i class="icon-coffee"></i></li>
+                <li><i class="icon-coffee"></i>Café&nbsp;Bombón<i class="icon-coffee"></i></li>
+                <li><i class="icon-coffee"></i>Carajillo<i class="icon-coffee"></i></li>
+                <li><i class="icon-coffee"></i>Irish&nbsp;coffee<i class="icon-coffee"></i></li>
             </ul>
         </article>
         <footer>
-            <p>Coffee Restaurant, Poland, 1231 UnknownRoad Warsaw &copy; 2017</p>
+            <p>Coffee Restaurant, Poland, 1231 UnknownRoad, Warsaw &copy; 2017</p>
         </footer>
     </div>
 </body>

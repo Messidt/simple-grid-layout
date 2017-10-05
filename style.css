@@ -8,6 +8,7 @@
 }
 
 body {
+    display: none;
     font-size: 15px;
     background-color: #303030;
     color: white;
@@ -19,7 +20,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(50px, auto);
 }
 
 /* HEADER */
@@ -31,6 +32,21 @@ body {
 #page-header h1 {
     font-size: 4rem;
     text-align: center;
+    padding: 10px;
+}
+
+#page-header h1 i {
+    margin-right: 20px;
+}
+
+#page-header h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+nav {
+    padding: 10px;
 }
 
 nav h2 {
@@ -44,48 +60,115 @@ nav ul {
     margin: 0;
     display: flex;
     list-style-type: none;
+    justify-content: space-around;
 }
 
 nav ul li{
-    flex: 0 0 20%;
+    flex: 1 1 20%;
     text-align: center;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    padding: 5px;
+    display: block;
+    border-bottom: 2px solid #303030;
+    transition: all .2s;
 }
+
+nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* BANNER */
 
 #main-banner {
     grid-column: 1/7;
 }
 
 #main-banner img {
+    display: none;
     width: 100%;
 }
 
+#main-banner img:first-of-type {
+    display: block;
+    width: 100%;
+}
+
+/* MENU */
+
 article {
-    grid-column: 2/6;
+    grid-column: 1/7;
+    margin-bottom: 50px;
 }
 
 article header {
-    width: 50%;
-    margin: 0 auto;
-    font-size: 4rem;
+    width: 40%;
+    margin: 50px auto;
     text-align: center;
-    border-bottom: 2px solid white;
+    margin-top: 30px;
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+}
+
+article header h1 {
+    
+    font-size: 4rem;
+    letter-spacing: 8px;
+
+}
+
+article header #menu-view {
+    font-size: 1.5rem;
+
+}
+
+article header #menu-view a{
+    color: white;
+    padding: 2px;
+    text-decoration: none;
+    transition: all .2s;
+    border-bottom: 1px solid #303030;
+}
+
+article header #menu-view a:hover {
+    border-bottom: 1px solid white;
 }
 
 article ul {
     width: 100%;
     list-style-type: none;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+article ul.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(150px, auto);
 }
 
 article ul li {
+    width: 100%;
     font-size: 3rem;
     text-align: center;
+    padding: 10px;
 }
+
+article ul li i {
+    visibility: hidden;
+    font-size: 2rem;
+    margin: 0 5px;
+}
+
+article ul li:hover i {
+    visibility: visible;
+}
+
+/* FOOTER */
 
 footer {
     grid-column: 1/7;
@@ -94,4 +177,58 @@ footer {
 footer p {
     font-size: 1.5rem;
     text-align: center;
+}
+
+/* SLIDES */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  }
+
+.rslides li p {
+    position: absolute;
+    font-size: 5rem;
+}
+.rslides li:first-of-type p {
+    top: 15%;
+    left: 60%;
+}
+
+.rslides li:nth-of-type(2) p {
+    top: 15%;
+    left: 55%;
+}
+
+.rslides li:nth-of-type(3) p {
+    top: 70%;
+    left: 5%;
 }
